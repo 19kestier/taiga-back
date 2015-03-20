@@ -98,7 +98,7 @@ class Migration(migrations.Migration):
                 ('is_kanban_activated', models.BooleanField(verbose_name='active kanban panel', default=False)),
                 ('is_wiki_activated', models.BooleanField(verbose_name='active wiki panel', default=True)),
                 ('is_issues_activated', models.BooleanField(verbose_name='active issues panel', default=True)),
-                ('videoconferences', models.CharField(max_length=250, null=True, choices=[('appear-in', 'AppearIn'), ('talky', 'Talky')], verbose_name='videoconference system', blank=True)),
+                ('videoconferences', models.CharField(max_length=250, null=True, choices=[('appear-in', 'AppearIn'), ('talky', 'Talky'), ('jitsi', 'Jitsi')], verbose_name='videoconference system', blank=True)),
                 ('videoconferences_salt', models.CharField(max_length=250, null=True, verbose_name='videoconference room salt', blank=True)),
                 ('default_options', django_pgjson.fields.JsonField(null=True, verbose_name='default options', blank=True)),
                 ('us_statuses', django_pgjson.fields.JsonField(null=True, verbose_name='us statuses', blank=True)),
