@@ -17,4 +17,5 @@
 VIDEOCONFERENCES_CHOICES = (
     ("appear-in", "AppearIn"),
     ("talky", "Talky"),
+    ("jitsi", "Jitsi"),
 )
